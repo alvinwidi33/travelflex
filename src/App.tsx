@@ -1,13 +1,18 @@
-import './App.css'
-
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+import Home from "./pages/Home";
 function App() {
   return (
-    <>
-      <div>
-        <p className="text-xl font-bold">Ayam</p>
-      </div>
-    </>
-  )
+    <div className="min-h-screen flex flex-col">
+      <BrowserRouter>
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </main>
+      </BrowserRouter>
+    </div>
+  );
 }
 
-export default App
+export default App;
