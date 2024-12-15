@@ -15,6 +15,9 @@ const config = {
           description: "#999999",
         },
       },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+      },
     },
   },
   plugins: [flowbitePlugin],

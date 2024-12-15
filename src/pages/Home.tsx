@@ -1,7 +1,7 @@
 function Home() {
     return (
         <div>
-            <p className="text-center">Ayam</p>
+            <p className="text-center font-poppins">Ayam</p>
         </div>
     );
 }
