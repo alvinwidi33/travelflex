@@ -7,7 +7,15 @@ const config = {
     "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: {
+          primary: "#0CAEEC",
+          title: "#000000",
+          description: "#999999",
+        },
+      },
+    },
   },
   plugins: [flowbitePlugin],
 };
