@@ -311,7 +311,7 @@ function Home() {
                 <input
                   type="email"
                   placeholder="Email Address"
-                  className="w-3/4 md:w-2/3 px-4 py-2 rounded-full focus:outline-none border-none shadow-md font-poppins"
+                  className="w-3/4 md:w-2/3 px-4 py-2 rounded-full focus:outline-none border-none shadow-md font-poppins ml-4"
                 />
                 <button className="bg-primary text-white px-6 py-2 rounded-full font-semibold shadow-md shadow-primary">
                   Subscribe
