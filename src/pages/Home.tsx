@@ -172,9 +172,13 @@ function Home() {
                   key={index}
                   ref={ref}
                   initial={{ opacity: 0, x: 100 }}
-                  animate={inView ? { opacity: 1, x: 0 } : {}}
+                  animate={
+                    inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 }
+                  }
                   transition={{ duration: 1, delay: index * 0.2 }}
-                  className="inline-grid space-y-2"
+                  className={`inline-grid space-y-2 ${
+                    inView ? "visible" : "invisible"
+                  }`}
                 >
                   <img
                     src={destination.image}
