@@ -116,7 +116,6 @@ function Home() {
             </p>
           </div>
           <div className="absolute inset-x-0 bottom-[-80px] md:bottom-[-60px] lg:bottom-[-40px] max-w-[90%] md:max-w-[884px] h-auto bg-white z-40 shadow-md rounded-2xl mx-auto p-4 flex flex-wrap md:flex-nowrap items-center justify-center gap-4 transform translate-y-1/2 md:translate-y-0">
-            {/* Location */}
             <div className="flex items-center space-x-3 flex-1 min-w-[160px]">
               <img src={location} className="w-6 h-6 md:w-8 md:h-8" />
               <div className="font-poppins text-sm md:text-base">
@@ -132,7 +131,6 @@ function Home() {
                 <p className="font-normal text-gray-500">Select your date</p>
               </div>
             </div>
-            {/* Date End */}
             <div className="flex items-center space-x-3 flex-1 min-w-[160px]">
               <img src={calendar} className="w-6 h-6 md:w-8 md:h-8" />
               <div className="font-poppins text-sm md:text-base">
@@ -140,7 +138,6 @@ function Home() {
                 <p className="font-normal text-gray-500">Select your date</p>
               </div>
             </div>
-            {/* Search Button */}
             <div className="flex items-center justify-center mt-4 md:mt-0">
               <button className="flex items-center bg-primary text-white font-poppins font-semibold px-5 md:px-7 py-2 rounded-full shadow-sm shadow-primary">
                 <img
@@ -167,7 +164,7 @@ function Home() {
             {topDestinations.map((destination, index) => {
               const { ref, inView } = useInView({
                 triggerOnce: true,
-                threshold: 0.2,
+                threshold: 0.5,
               });
 
               return (
@@ -176,7 +173,7 @@ function Home() {
                   ref={ref}
                   initial={{ opacity: 0, x: 100 }}
                   animate={inView ? { opacity: 1, x: 0 } : {}}
-                  transition={{ duration: 0.6, delay: index * 0.2 }}
+                  transition={{ duration: 1, delay: index * 0.2 }}
                   className="inline-grid space-y-2"
                 >
                   <img
